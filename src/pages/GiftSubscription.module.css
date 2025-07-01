@@ -1,0 +1,179 @@
+.giftSubscribeBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.giftSubscribeBox {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+  color: #fff;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  line-height: 1;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.closeBtn:hover {
+  opacity: 1;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: #999;
+  margin-bottom: 2rem;
+}
+
+.optionsRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.optionCard {
+  background: #2a2a2a;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.optionCard:hover {
+  background: #333;
+}
+
+.optionSelected {
+  border-color: #e50914;
+  background: #2a2a2a;
+}
+
+.optionTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.optionPrice {
+  color: #e50914;
+  font-weight: bold;
+}
+
+.selectedMark {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #e50914;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 0.8rem;
+  background: #2a2a2a;
+  border: 1px solid #333;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #e50914;
+}
+
+.error {
+  color: #e50914;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.giftBtn {
+  width: 100%;
+  padding: 1rem;
+  background: #e50914;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.giftBtn:hover {
+  background: #f40612;
+}
+
+.giftBtn:disabled {
+  background: #666;
+  cursor: not-allowed;
+}
+
+.terms {
+  margin-top: 1rem;
+  text-align: center;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .optionsRow {
+    grid-template-columns: 1fr;
+  }
+  
+  .giftSubscribeBox {
+    padding: 1.5rem;
+    width: 95%;
+  }
+} 

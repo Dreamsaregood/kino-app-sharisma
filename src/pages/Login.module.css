@@ -1,0 +1,154 @@
+.loginBg {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #181a1b;
+}
+.loginBox {
+  background: #232427;
+  padding: 2rem;
+  border-radius: 1.25rem;
+  width: 100%;
+  max-width: 600px;
+  color: #fff;
+  position: relative;
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 2rem;
+}
+.closeBtn {
+  position: absolute;
+  top: 1.2rem;
+  left: 1.2rem;
+  font-size: 1.4rem;
+  color: #bdbdbd;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.closeBtn:hover {
+  color: #fff;
+}
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+.tabs {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+.tab {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #555;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+.tabActive {
+  background: #fff;
+  color: #181a1b;
+}
+.tabLeft {
+  border-radius: 0.5rem 0 0 0.5rem;
+  border-right: none;
+}
+.tabRight {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.formGroup {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #bdbdbd;
+  font-size: 0.95rem;
+}
+.input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1.5px solid #555;
+  outline: none;
+  color: #fff;
+  font-size: 1.08rem;
+  padding: 0.8rem 0.4rem 0.6rem 0.4rem;
+  margin-bottom: 0.2rem;
+  transition: all 0.2s ease;
+}
+.input:focus {
+  border-bottom: 1.5px solid #fff;
+}
+.input::placeholder {
+  color: #888;
+  opacity: 1;
+}
+.error {
+  color: #ef4444;
+  font-size: 0.9rem;
+  margin: -0.5rem 0 1rem 0;
+  text-align: center;
+}
+.loginBtn {
+  width: 100%;
+  background: linear-gradient(90deg, #7c3aed 0%, #e11d48 100%);
+  padding: 1rem;
+  border-radius: 0.6rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.loginBtn:hover {
+  opacity: 0.9;
+}
+.regBtn {
+  width: 100%;
+  background: #35363a;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.regBtn:hover {
+  background: #444;
+}
+.dotsWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.dotsBtn {
+  background: #232427;
+  border-radius: 0.5rem;
+  width: 2.3rem;
+  height: 2.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #bdbdbd;
+  cursor: pointer;
+} 

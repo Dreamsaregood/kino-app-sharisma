@@ -1,0 +1,32 @@
+{
+  "channels": [
+    {
+      "id": "music1",
+      "name": "Synthwave Radio",
+      "category": "Music",
+      "stream": "https://www.youtube.com/embed/4xDzrJKXOOY",
+      "description": "Synthwave & Retrowave музыка - круглосуточное радио"
+    },
+    {
+      "id": "music2",
+      "name": "Lo-Fi Hip Hop",
+      "category": "Music",
+      "stream": "https://www.youtube.com/embed/jfKfPfyJRdk",
+      "description": "Lo-Fi музыка для работы и учёбы"
+    },
+    {
+      "id": "music3",
+      "name": "Classical Music",
+      "category": "Music",
+      "stream": "https://www.youtube.com/embed/5f9p5F8Etvk",
+      "description": "Классическая музыка для концентрации"
+    },
+    {
+      "id": "music4",
+      "name": "Jazz Cafe",
+      "category": "Music",
+      "stream": "https://www.youtube.com/embed/-5KAN9_CzSA",
+      "description": "Джаз и блюз - круглосуточное радио"
+    }
+  ]
+} 

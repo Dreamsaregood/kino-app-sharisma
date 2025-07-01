@@ -1,0 +1,359 @@
+.movieBg {
+  min-height: 100vh;
+  background: #0a0a0a;
+}
+
+.cinematicHero {
+  position: relative;
+  height: 75vh;
+  background-size: cover;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+}
+
+.heroGradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 10, 10, 0) 0%,
+    rgba(10, 10, 10, 0.8) 70%,
+    #0a0a0a 100%
+  );
+  display: flex;
+  align-items: flex-end;
+}
+
+.heroContent {
+  max-width: 800px;
+  padding: 0 4rem 6rem;
+  position: relative;
+  z-index: 2;
+}
+
+.movieMeta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.movieTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.movieTags span {
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.4rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+
+.rating {
+  color: #ffd700;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.year, .age {
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.3rem 0.8rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.movieTitle {
+  font-size: 3.5rem;
+  color: #fff;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.originalTitle {
+  display: block;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.playButton {
+  background: #e11d48;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.playButton:hover {
+  background: #be123c;
+  transform: translateY(-2px);
+}
+
+.trailerButton {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.trailerButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.contentWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.posterSection {
+  margin-top: -100px;
+  position: relative;
+  z-index: 3;
+  padding-top: 120px;
+}
+
+.posterImage {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.ratingCard {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+}
+
+.ratingScore {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.scoreNumber {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffd700;
+  margin-bottom: 0.3rem;
+}
+
+.scoreLabel {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.ratingButtons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.likeBtn,
+.dislikeBtn {
+  flex: 1;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.likeBtn:hover,
+.dislikeBtn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.detailsSection {
+  color: #fff;
+  padding-top: 2rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+}
+
+.metaInfo {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.metaRow {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.metaLabel {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+}
+
+.metaValue {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.trailerModal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.trailerWrapper {
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+  aspect-ratio: 16/9;
+}
+
+.closeTrailer {
+  position: absolute;
+  top: -2.5rem;
+  right: 0;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: all 0.2s;
+}
+
+.closeTrailer:hover {
+  transform: scale(1.1);
+}
+
+.trailerWrapper iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.favoriteButton {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px;
+  margin-left: 10px;
+  transition: transform 0.2s ease, color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.favoriteButton:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.favoriteActive {
+  color: #ffd700;
+}
+
+@media (max-width: 1024px) {
+  .contentWrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .posterSection {
+    margin-top: -100px;
+    max-width: 280px;
+  }
+
+  .heroContent {
+    padding: 0 2rem 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cinematicHero {
+    height: 60vh;
+  }
+
+  .heroContent {
+    padding: 0 1rem 3rem;
+  }
+
+  .movieTitle {
+    font-size: 2rem;
+  }
+
+  .originalTitle {
+    font-size: 1.2rem;
+  }
+
+  .contentWrapper {
+    padding: 1rem;
+  }
+
+  .posterSection {
+    margin-top: -80px;
+    max-width: 100%;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .metaRow {
+    grid-template-columns: 120px 1fr;
+  }
+
+  .actionButtons {
+    flex-direction: column;
+  }
+
+  .playButton,
+  .trailerButton {
+    width: 100%;
+  }
+} 

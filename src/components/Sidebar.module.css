@@ -1,0 +1,40 @@
+.sidebarBg {
+  background: #181a1b;
+  min-width: 170px;
+  max-width: 200px;
+  padding: 2.2rem 1.2rem;
+  color: #fff;
+  border-right: 1.5px solid #232427;
+  height: 100%;
+}
+.menuList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  position: sticky;
+  top: 100px;
+}
+.menuItem {
+  color: #bdbdbd;
+  font-size: 1.08rem;
+  font-weight: 500;
+  padding: 0.7rem 1rem;
+  border-radius: 0.6rem;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.menuItemActive,
+.menuItem:hover {
+  background: #232427;
+  color: #fff;
+}
+.menuItemIcon {
+  margin-right: 8px;
+  font-size: 16px;
+  color: #ffd700;
+}
+@media (max-width: 768px) {
+  .sidebarBg {
+    display: none;
+  }
+} 

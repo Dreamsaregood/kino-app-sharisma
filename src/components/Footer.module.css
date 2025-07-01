@@ -1,0 +1,74 @@
+.footerBg {
+  background: #181a1b;
+  color: #bdbdbd;
+  padding: 2.5rem 2rem 1.5rem 2rem;
+  border-top: 1.5px solid #232427;
+  font-size: 1rem;
+}
+.footerGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto 1.5rem auto;
+}
+.footerCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.footerTitle {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1.08rem;
+}
+.footerPay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.footerPay span {
+  background: #232427;
+  border-radius: 0.6rem;
+  padding: 0.4rem 1.2rem;
+  color: #fff;
+  font-size: 1.08rem;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
+  transition: background 0.2s, color 0.2s;
+}
+.footerPay span:hover {
+  background: #35363a;
+  color: #e11d48;
+}
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  color: #888;
+}
+.footerIcons {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: 0.7rem;
+}
+.footerIcon {
+  width: 2rem;
+  height: 2rem;
+  background: #232427;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.2rem;
+} 

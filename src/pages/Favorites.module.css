@@ -1,0 +1,92 @@
+.container {
+  padding: 2rem;
+  max-width: 100%;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 2.5rem;
+}
+
+.message {
+  color: #fff;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+
+.loading {
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Переиспользуем остальные стили из Home.module.css */
+.card {
+  composes: card from './Home.module.css';
+}
+
+.imageWrapper {
+  composes: imageWrapper from './Home.module.css';
+}
+
+.poster {
+  composes: poster from './Home.module.css';
+}
+
+.cardOverlay {
+  composes: cardOverlay from './Home.module.css';
+}
+
+.cardContent {
+  composes: cardContent from './Home.module.css';
+}
+
+.cardInfo {
+  composes: cardInfo from './Home.module.css';
+}
+
+.cardTitle {
+  composes: cardTitle from './Home.module.css';
+}
+
+.cardBadge {
+  composes: cardBadge from './Home.module.css';
+}
+
+.cardDescription {
+  composes: cardDescription from './Home.module.css';
+}
+
+.favoriteButton {
+  composes: favoriteButton from './Home.module.css';
+}
+
+.favoriteActive {
+  composes: favoriteActive from './Home.module.css';
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .grid {
+    gap: 1rem;
+  }
+} 
